@@ -51,9 +51,9 @@ public class motionController : MonoBehaviour {
                 //in theory: if we lean forward, our head's y position will be more than our hips y position
                 //so lets try and highlight that in our code 
 
-                if ((headJointPosition.y - hipjointPosition.y) < 0.5)
+                if ((headJointPosition.z - hipjointPosition.z) < -0.05)
                 {
-                    gameObject.transform.Translate(0, 0, -(speed * Time.deltaTime));// we only need it to move in the y position soo we only change the y position, to make it more natural speed we multiply speed by Time.deltaTime
+                    gameObject.transform.Translate(0, 0, (speed * Time.deltaTime));// we only need it to move in the y position soo we only change the y position, to make it more natural speed we multiply speed by Time.deltaTime
                     // also gameObject is the specific object this script is attached to, GameObject is a variable type 
                     // so im moving the object this script is attached to
                     print(headJointPosition.y - hipjointPosition.y);
@@ -63,9 +63,9 @@ public class motionController : MonoBehaviour {
 
 
                 }// we are going to say if the head's y position is greater than the hips y position, we want to move forward.. 
-                else if ((headJointPosition.y - hipjointPosition.y) > 0.6)
+                else if ((headJointPosition.z - hipjointPosition.z) > 0.1)
                 {
-                    gameObject.transform.Translate(0, 0, (speed * Time.deltaTime));
+                    gameObject.transform.Translate(0, 0, -(speed * Time.deltaTime));
                     print(headJointPosition.y - hipjointPosition.y);
                     print("going backward");
                 }
