@@ -12,20 +12,21 @@ public class motionController : MonoBehaviour {
 
     // Use this for initialization
   
-    private KinectInterop.JointType head = KinectInterop.JointType.SpineShoulder; //we used the KinectInterop which holds all the information and handles the data , we called information from the joint class, specifically the right hand
+    private KinectInterop.JointType head = KinectInterop.JointType.SpineShoulder; 
     private KinectInterop.JointType hip = KinectInterop.JointType.SpineBase;
     private KinectInterop.JointType leftKnee = KinectInterop.JointType.KneeLeft;
     private KinectInterop.JointType rightKnee = KinectInterop.JointType.KneeRight;
+    private KinectInterop.JointType leftShoulder = KinectInterop.JointType.ShoulderLeft;
+    private KinectInterop.JointType rightShoulder = KinectInterop.JointType.ShoulderRight;
     public Vector3 headJointPosition;
     public Vector3 hipJointPosition;
     public Vector3 leftKneeJointPosition;
     public Vector3 rightKneeJointPosition;
+    public Vector3 leftShoulderJointPosition;
+    public Vector3 rightShoulderJointPosition;
     private long trackedUsersId;
-    public float speed = 0.5f;
-
-
-
-
+    public float moveSpeed = 2.5f;
+    public float turnSpeed = 12.5f;
 
 
 	void Start () {
@@ -39,46 +40,26 @@ public class motionController : MonoBehaviour {
         if (manager.IsUserDetected() && manager.IsUserTracked(trackedUsersId))
         {
             print("user detected");
-            if (manager.IsJointTracked(trackedUsersId, (int)head) && manager.IsJointTracked(trackedUsersId, (int)hip) && manager.IsJointTracked(trackedUsersId, (int)leftKnee) && manager.IsJointTracked(trackedUsersId, (int)rightKnee))
+            if (manager.IsJointTracked(trackedUsersId, (int)head) && manager.IsJointTracked(trackedUsersId, (int)hip) && manager.IsJointTracked(trackedUsersId, (int)leftKnee) && manager.IsJointTracked(trackedUsersId, (int)rightKnee) && manager.IsJointTracked(trackedUsersId, (int)rightShoulder) && manager.IsJointTracked(trackedUsersId, (int)leftShoulder))
             {
                 print("got the joints .. of the body");
-                headJointPosition = manager.GetJointPosition(trackedUsersId, (int)head);//change the headJointPosition to the position of the current head joint's position
+                headJointPosition = manager.GetJointPosition(trackedUsersId, (int)head);
+                hipJointPosition = manager.GetJointPosition(trackedUsersId, (int)hip);
+                leftKneeJointPosition = manager.GetJointPosition(trackedUsersId, (int)leftKnee);
+                rightKneeJointPosition = manager.GetJointPosition(trackedUsersId, (int)rightKnee);
+                leftShoulderJointPosition = manager.GetJointPosition(trackedUsersId, (int)leftShoulder);
+                rightShoulderJointPosition = manager.GetJointPosition(trackedUsersId, (int)rightShoulder);
 
-                hipJointPosition = manager.GetJointPosition(trackedUsersId, (int)hip);// change the hipJointPosition to the position of the current jip joint's position
 
-                leftKneeJointPosition = manager.GetJointPosition(trackedUsersId, (int)leftKnee);// change the hipJointPosition to the position of the current jip joint's position
-
-                rightKneeJointPosition = manager.GetJointPosition(trackedUsersId, (int)rightKnee);// change the hipJointPosition to the position of the current jip joint's position
-
-                //now we want to use our imagination and imagine us performing the gesture, so we want to move the cube whenever we lean forward.. We are using information
-                // that deals with the head and hip.. 
-                // so when we think of leaning forward, assuming we have perfect posture, we visualize the head of the person being further outward then the hip. 
-                // so now we have to use some knowledge of x, y and z coordinates.. 
-
-                // using the XYZ mode of the person we see that we would be interested in testing the y axis of the head and the hip 
-                //in theory: if we lean forward, our head's y position will be more than our hips y position
-                //so lets try and highlight that in our code 
-
-                if ((headJointPosition.z - hipJointPosition.z) < -0.05 || leftKneeJointPosition.y > 0.3 || rightKneeJointPosition.y > 0.3)
+                if ((headJointPosition.z - hipJointPosition.z) < -0.05 || leftKneeJointPosition.y > 0.65 || rightKneeJointPosition.y > 0.65)
                 {
-                    gameObject.transform.Translate(0, 0, (speed * Time.deltaTime));// we only need it to move in the y position soo we only change the y position, to make it more natural speed we multiply speed by Time.deltaTime
-                    // also gameObject is the specific object this script is attached to, GameObject is a variable type 
-                    // so im moving the object this script is attached to
-                    print(headJointPosition.y - hipJointPosition.y);
+                    gameObject.transform.Translate(0, 0, (moveSpeed * Time.deltaTime));
+                    print("lean forward"+ (headJointPosition.y - hipJointPosition.y));
                     print("left knee" + leftKneeJointPosition.y);
                     print("right knee" + rightKneeJointPosition.y);
                     print("going forward");
             
-
-
-
-                }// we are going to say if the head's y position is greater than the hips y position, we want to move forward.. 
-                /*else if ((headJointPosition.z - hipJointPosition.z) > 0.1)
-                {
-                    gameObject.transform.Translate(0, 0, -(speed * Time.deltaTime));
-                    print(headJointPosition.y - hipJointPosition.y);
-                    print("going backward");
-                }*/
+                }
                 else
                 {
                     gameObject.transform.Translate(0, 0, 0);
@@ -87,8 +68,19 @@ public class motionController : MonoBehaviour {
                     print("not moving");
                 }
 
-
-                //in here we have access to the joint's positon, and its a variable type called Vector3. This means we have access to the 3D coordinates of the joint..
+                //rotation
+                if ((leftShoulderJointPosition.z - rightShoulderJointPosition.z) > 0.05)
+                {
+                    gameObject.transform.Rotate(Vector3.up, (-turnSpeed * Time.deltaTime));
+                    print(leftShoulderJointPosition.z - rightShoulderJointPosition.z);
+                    print("rotating left");
+                }
+                else if ((leftShoulderJointPosition.z - rightShoulderJointPosition.z) < -0.05)
+                {
+                    gameObject.transform.Rotate(Vector3.up, (turnSpeed * Time.deltaTime));
+                    print(leftShoulderJointPosition.z - rightShoulderJointPosition.z);
+                    print("rotating right");
+                }
 
 
 
