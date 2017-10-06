@@ -186,7 +186,7 @@ ModelImporter:
     400176: Spine1
     400178: Spine2
     4300000: characterUV:polySurface1
-    7400000: Take 001
+    7400000: anim1take
     9500000: //RootNode
     13700000: characterUV:polySurface1
   materials:
@@ -214,7 +214,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: anim1take
       takeName: Take 001
       firstFrame: 1
       lastFrame: 4000

@@ -220,7 +220,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 893103467}
   m_LocalRotation: {x: -0, y: 0.36216566, z: -0, w: 0.9321138}
-  m_LocalPosition: {x: -0.465, y: 0.174, z: -0.267}
+  m_LocalPosition: {x: -2.44, y: 1.93, z: -2.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -295,6 +295,38 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5093596
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5122022
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5061404
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.47119397
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 32e9e552c6a166a459340009286f166d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9bbaa12f6cdb99a4cbaa7888fa2555f6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32e9e552c6a166a459340009286f166d, type: 3}
   m_IsPrefabParent: 0
@@ -313,7 +345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ac619ede9f99a46b193fb1bc1b00ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 1867542372}
+--- !u!95 &1867542372 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 32e9e552c6a166a459340009286f166d,
+    type: 3}
+  m_PrefabInternal: {fileID: 1867542369}
 --- !u!1 &1891998763
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b0269b8c76ae144ad5b9054e562ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1891998764}
 --- !u!1 &1912063215
 GameObject:
   m_ObjectHideFlags: 0
