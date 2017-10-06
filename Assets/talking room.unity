@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44811785, g: 0.49813002, b: 0.57554066, a: 1}
+  m_IndirectSpecularColor: {r: 0.44811815, g: 0.49813062, b: 0.5755411, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -898,13 +898,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 776936373}
-  m_LocalRotation: {x: -0, y: -0.16509081, z: -0, w: 0.98627836}
-  m_LocalPosition: {x: 0.0101, y: 6.79, z: -0.1728}
-  m_LocalScale: {x: 0.012500002, y: 1, z: 0.012500002}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.5904, y: 7.13, z: -0.1795}
+  m_LocalScale: {x: 0, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 914315832}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: -19.005001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!81 &776936375
 AudioListener:
   m_ObjectHideFlags: 0
@@ -977,7 +977,10 @@ MonoBehaviour:
   hipJointPosition: {x: 0, y: 0, z: 0}
   leftKneeJointPosition: {x: 0, y: 0, z: 0}
   rightKneeJointPosition: {x: 0, y: 0, z: 0}
-  speed: 1
+  leftShoulderJointPosition: {x: 0, y: 0, z: 0}
+  rightShoulderJointPosition: {x: 0, y: 0, z: 0}
+  moveSpeed: 2.5
+  turnSpeed: 12.5
 --- !u!1 &857526759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,6 +2625,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -2726,6 +2743,20 @@ Light:
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 15}
   m_BounceIntensity: 40.2
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
