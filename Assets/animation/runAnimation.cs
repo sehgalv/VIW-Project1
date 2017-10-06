@@ -12,6 +12,16 @@ public class runAnimation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        print("picked up ");
         anim.Play("handlanguage");
+        //if (Time.time >= Random.Range(30.0f, 60.0f))
+        //{
+        //    anim.StopPlayback();
+        //}
+        //} else
+        //{
+        //    anim.Play("handlanguage");
+        //}
+        
 	}
 }
