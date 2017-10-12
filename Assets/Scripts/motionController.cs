@@ -51,14 +51,19 @@ public class motionController : MonoBehaviour {
                 rightShoulderJointPosition = manager.GetJointPosition(trackedUsersId, (int)rightShoulder);
 
 
-                if ((headJointPosition.z - hipJointPosition.z) < -0.05 || leftKneeJointPosition.y > 0.65 || rightKneeJointPosition.y > 0.65)
+                if ((headJointPosition.z - hipJointPosition.z) < -0.05 )
                 {
                     gameObject.transform.Translate(0, 0, (moveSpeed * Time.deltaTime));
                     print("lean forward"+ (headJointPosition.y - hipJointPosition.y));
+                    print("going forward");
+            
+                }
+                else if(leftKneeJointPosition.y > 0.65 || rightKneeJointPosition.y > 0.65)
+                {
+                    gameObject.transform.Translate(0, 0, (moveSpeed * 4 * Time.deltaTime));
                     print("left knee" + leftKneeJointPosition.y);
                     print("right knee" + rightKneeJointPosition.y);
                     print("going forward");
-            
                 }
                 else
                 {
