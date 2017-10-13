@@ -14,18 +14,26 @@ public class runAnimation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       //var n = target.transform.position - body.transform.position;
+        //var n = target.transform.position - body.transform.position;
+        Quaternion targetMeasurement = Quaternion.Euler(0, -target.transform.position.y * 30.0f, 0);
         print("picked up ");
-        if (Time.time >= 30.0f)//Random.Range(30.0f, 60.0f)
+        if (Time.time >= 60.0f)//Random.Range(30.0f, 60.0f)
         {
             anim.Play("idle");
-            if (Time.time >= 33.0f)
+            if (Time.time >= 63.0f)
             {
-                //body.transform.rotation = Quaternion.Euler(-Camera.main.transform.rotation.x, -Camera.main.transform.rotation.y, -Camera.main.transform.rotation.z);
+                // body.transform.rotation = Quaternion.Euler(0, target.transform.rotation.y,0);
+               
+                body.transform.rotation = Quaternion.Slerp(transform.rotation, targetMeasurement, Time.deltaTime * 2.0f);
                 print("body rotated");
                 // body.transform.rotation = Quaternion.LookRotation(target.transform.up,-target.transform.forward);
-                 body.transform.LookAt(target.transform, target.transform.up);
-              // body.transform.rotation = Quaternion.LookRotation(n) * Quaternion.Euler(0, 90, 0);
+                // body.transform.LookAt(target.transform); //, target.transform.up
+                // body.transform.rotation = Quaternion.Euler(target.transform.eulerAngles.x, target.transform.eulerAngles.y, target.transform.eulerAngles.z);
+                // body.transform.rotation = Quaternion.LookRotation(n) * Quaternion.Euler(0, 90, 0);
+
+
+                // transform.LookAt(target.transform);
+                // print(body.GetInstanceID() + " "+body.position.x + " "+body.position.y +" " + body.position.z);
             }
 
         } else
