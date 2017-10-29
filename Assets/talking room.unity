@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44811785, g: 0.49813002, b: 0.57554066, a: 1}
+  m_IndirectSpecularColor: {r: 0.44811815, g: 0.49813062, b: 0.5755411, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -392,6 +392,9 @@ MonoBehaviour:
   anim: {fileID: 121288119}
   body: {fileID: 121288120}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &121288119 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -713,6 +716,9 @@ MonoBehaviour:
   anim: {fileID: 246548111}
   body: {fileID: 246548112}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &246548111 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -968,6 +974,9 @@ MonoBehaviour:
   anim: {fileID: 279687471}
   body: {fileID: 279687469}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!54 &279687473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1463,6 +1472,9 @@ MonoBehaviour:
   anim: {fileID: 476356089}
   body: {fileID: 476356090}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &476356089 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -1509,6 +1521,9 @@ MonoBehaviour:
   anim: {fileID: 530250191}
   body: {fileID: 530250192}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &530250191 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -1679,6 +1694,9 @@ MonoBehaviour:
   anim: {fileID: 574167260}
   body: {fileID: 574167258}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &574167260 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -1779,6 +1797,9 @@ MonoBehaviour:
   anim: {fileID: 605004432}
   body: {fileID: 605004433}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &605004432 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -1894,20 +1915,20 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4669e0af02dbe424ab85825d8767f5fb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.595
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 189
   DopplerLevel: 1
-  MinDistance: 5
-  MaxDistance: 10
+  MinDistance: 0.52544594
+  MaxDistance: 5.533806
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1915,20 +1936,20 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.20870972
+      value: 1.0088348
+      inSlope: -2.0008
+      outSlope: -2.0008
       tangentMode: 0
     - serializedVersion: 2
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.5
+      inSlope: -0.5002
+      outSlope: -0.5002
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1972,7 +1993,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 676130170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.16996, y: 6.64, z: 16.174328}
+  m_LocalPosition: {x: -45.14, y: 7.62, z: 23.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2062,6 +2083,9 @@ MonoBehaviour:
   anim: {fileID: 726248038}
   body: {fileID: 726248039}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &726248038 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -2113,7 +2137,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 776936373}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.6231, y: 6.53, z: -0.0345}
+  m_LocalPosition: {x: 0.6587, y: 6.23, z: -0.0338}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1637661363}
@@ -2213,6 +2237,9 @@ MonoBehaviour:
   anim: {fileID: 780465288}
   body: {fileID: 780465289}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &780465288 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -2490,6 +2517,9 @@ MonoBehaviour:
   anim: {fileID: 865149682}
   body: {fileID: 865149680}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &865149682 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -2805,6 +2835,9 @@ MonoBehaviour:
   anim: {fileID: 922923725}
   body: {fileID: 922923726}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &922923725 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -2847,6 +2880,9 @@ MonoBehaviour:
   anim: {fileID: 925681791}
   body: {fileID: 925681792}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &925681791 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -2980,7 +3016,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de303a5028da7fe428b8a51bb90946ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.611
+  m_Volume: 0.749
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3502,6 +3538,9 @@ MonoBehaviour:
   anim: {fileID: 1137957515}
   body: {fileID: 1137957513}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1137957515 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -3920,6 +3959,9 @@ MonoBehaviour:
   anim: {fileID: 1282397567}
   body: {fileID: 1282397565}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1282397567 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -3962,6 +4004,9 @@ MonoBehaviour:
   anim: {fileID: 1288755674}
   body: {fileID: 1288755672}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1288755674 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4643,6 +4688,9 @@ MonoBehaviour:
   anim: {fileID: 1457131473}
   body: {fileID: 1457131474}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1457131473 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4685,6 +4733,9 @@ MonoBehaviour:
   anim: {fileID: 1457759601}
   body: {fileID: 1457759602}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1457759601 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4727,6 +4778,9 @@ MonoBehaviour:
   anim: {fileID: 1470738530}
   body: {fileID: 1470738531}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1470738530 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -4941,6 +4995,9 @@ MonoBehaviour:
   anim: {fileID: 1517945052}
   body: {fileID: 1517945050}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1517945052 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -4983,6 +5040,9 @@ MonoBehaviour:
   anim: {fileID: 1523359976}
   body: {fileID: 1523359974}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1523359976 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -5530,6 +5590,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -5874,6 +5948,9 @@ MonoBehaviour:
   anim: {fileID: 1691889537}
   body: {fileID: 1691889535}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!54 &1691889539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6109,6 +6186,9 @@ MonoBehaviour:
   anim: {fileID: 1738989457}
   body: {fileID: 1738989458}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1738989457 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6194,6 +6274,20 @@ Light:
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 15}
   m_BounceIntensity: 40.2
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -6307,6 +6401,9 @@ MonoBehaviour:
   anim: {fileID: 1809420533}
   body: {fileID: 1809420534}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1809420533 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6435,6 +6532,9 @@ MonoBehaviour:
   anim: {fileID: 1849242261}
   body: {fileID: 1849242259}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1849242261 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6757,6 +6857,9 @@ MonoBehaviour:
   anim: {fileID: 1936154386}
   body: {fileID: 1936154384}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &1936154386 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -7195,6 +7298,9 @@ MonoBehaviour:
   anim: {fileID: 2028860340}
   body: {fileID: 2028860341}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!95 &2028860340 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -7636,6 +7742,9 @@ MonoBehaviour:
   anim: {fileID: 2107948921}
   body: {fileID: 2107948919}
   target: {fileID: 776936378}
+  audio: {fileID: 985427507}
+  main_audio: {fileID: 104634669}
+  convo2: {fileID: 676130171}
 --- !u!54 &2107948923
 Rigidbody:
   m_ObjectHideFlags: 0
