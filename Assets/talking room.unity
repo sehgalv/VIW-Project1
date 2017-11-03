@@ -300,7 +300,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 33.589497
+  MinDistance: 30.61305
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -395,6 +395,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &121288119 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -719,6 +720,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &246548111 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -977,6 +979,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!54 &279687473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1475,6 +1478,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &476356089 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -1524,6 +1528,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &530250191 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -1697,6 +1702,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &574167260 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -1800,6 +1806,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &605004432 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -1917,7 +1924,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4669e0af02dbe424ab85825d8767f5fb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.595
+  m_Volume: 0.564
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1925,10 +1932,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 189
   DopplerLevel: 1
-  MinDistance: 0.52544594
-  MaxDistance: 5.533806
+  MinDistance: 7.4166203
+  MaxDistance: 14.231667
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1936,16 +1943,16 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0.20870972
-      value: 1.0088348
-      inSlope: -2.0008
-      outSlope: -2.0008
+      time: 0.43414408
+      value: 0.99256897
+      inSlope: -1.6720972
+      outSlope: -1.6720972
       tangentMode: 0
     - serializedVersion: 2
-      time: 1
-      value: 0.5
-      inSlope: -0.5002
-      outSlope: -0.5002
+      time: 0.9343262
+      value: 0
+      inSlope: -0.598529
+      outSlope: -0.598529
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1955,7 +1962,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1993,7 +2000,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 676130170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.14, y: 7.62, z: 23.35}
+  m_LocalPosition: {x: -45.14, y: 7.62, z: 23.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2086,6 +2093,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &726248038 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -2240,6 +2248,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &780465288 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -2520,6 +2529,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &865149682 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -2838,6 +2848,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &922923725 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -2883,6 +2894,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &925681791 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -3016,16 +3028,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de303a5028da7fe428b8a51bb90946ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.749
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 84
   DopplerLevel: 1
-  MinDistance: 5
-  MaxDistance: 10
+  MinDistance: 8.371104
+  MaxDistance: 20.096992
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -3035,26 +3047,26 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.19884157
+      value: 1.0037155
+      inSlope: -1.6593287
+      outSlope: -1.6593287
       tangentMode: 0
     - serializedVersion: 2
-      time: 1
+      time: 0.86868286
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.60313493
+      outSlope: -0.60313493
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.998
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3092,7 +3104,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 985427506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.24, y: -1.32, z: -2.6656733}
+  m_LocalPosition: {x: 9.89, y: 2.27, z: -17.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3541,6 +3553,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1137957515 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -3962,6 +3975,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1282397567 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -4007,6 +4021,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1288755674 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4691,6 +4706,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1457131473 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4736,6 +4752,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1457759601 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: ea232814937eb32488a3c95ae9d1459f,
@@ -4781,6 +4798,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1470738530 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -4998,6 +5016,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1517945052 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -5043,6 +5062,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1523359976 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -5951,6 +5971,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!54 &1691889539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6189,6 +6210,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1738989457 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6404,6 +6426,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1809420533 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6535,6 +6558,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1849242261 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 22ecd0e892f7ab547a72db3d70bc3b89,
@@ -6860,6 +6884,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &1936154386 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -7301,6 +7326,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!95 &2028860340 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 7587e7d57d9ff624c911833e3eff804a,
@@ -7535,6 +7561,121 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbd2b7e50d3247f42afac772f22b5d04, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2092899709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2092899711}
+  - component: {fileID: 2092899710}
+  m_Layer: 0
+  m_Name: Audio Source (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2092899710
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092899709}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ae33ccceb13d6ec46a3da0148d12d09c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.262
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 196
+  DopplerLevel: 1
+  MinDistance: 15.360558
+  MaxDistance: 34.014374
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.52376604
+      value: 0.99628067
+      inSlope: -2.8014405
+      outSlope: -2.8014405
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7899485
+      value: 0.53715515
+      inSlope: -0.7003601
+      outSlope: -0.7003601
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.9343567
+      value: 0.0003362
+      inSlope: -0.3572449
+      outSlope: -0.3572449
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &2092899711
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092899709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -61.4, y: -14.98, z: 14.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2101579471
 Prefab:
   m_ObjectHideFlags: 0
@@ -7745,6 +7886,7 @@ MonoBehaviour:
   audio: {fileID: 985427507}
   main_audio: {fileID: 104634669}
   convo2: {fileID: 676130171}
+  convo3: {fileID: 2092899710}
 --- !u!54 &2107948923
 Rigidbody:
   m_ObjectHideFlags: 0

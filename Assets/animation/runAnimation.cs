@@ -10,6 +10,7 @@ public class runAnimation : MonoBehaviour {
     public AudioSource audio;
     public AudioSource main_audio;
     public AudioSource convo2;
+    public AudioSource convo3;
     bool rotation = false;
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class runAnimation : MonoBehaviour {
             audio.Stop();
             main_audio.Stop();
             convo2.Stop();
+            convo3.Stop();
             if (Time.time >= 63.0f && (rotation ==false))
             {
                
@@ -40,6 +42,7 @@ public class runAnimation : MonoBehaviour {
                 {
                     rotation = true;
                     body.transform.Rotate(new Vector3(0, body.transform.rotation.y, 0));
+                    anim.Play("clapping");
                 } /*else
                 {
                     body.transform.LookAt(target.transform.position);
